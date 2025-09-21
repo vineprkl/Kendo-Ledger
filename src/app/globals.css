@@ -1,0 +1,120 @@
+@config "../../tailwind.config.ts";
+@import "tailwindcss";
+@import "@progress/kendo-theme-default/dist/all.css";
+
+:root {
+  color-scheme: light;
+  --background: #f5f7fb;
+  --foreground: #0f172a;
+  --surface: #ffffff;
+  --sidebar: #ffffff;
+  --sidebar-active: rgba(37, 99, 235, 0.12);
+  --border-subtle: rgba(15, 23, 42, 0.08);
+  --accent: #2563eb;
+  --accent-hover: #1d4ed8;
+  --muted: #475569;
+  --chip: rgba(37, 99, 235, 0.08);
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-geist-sans, 'Inter', system-ui);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+main {
+  background-color: transparent;
+}
+
+.k-scheduler,
+.k-grid,
+.k-dialog,
+.k-window,
+.k-popup,
+.k-card,
+.k-panelbar,
+.k-calendar,
+.k-editor {
+  background-color: var(--surface);
+  color: var(--foreground);
+}
+
+.k-button,
+.k-textbox,
+.k-input-inner,
+.k-picker input,
+.k-numerictextbox input,
+.k-dropdownlist,
+.k-selectbox,
+.k-dateinput,
+.k-daterangepicker,
+.k-daterangepicker .k-input-inner {
+  background-color: #eef2ff;
+  color: var(--foreground);
+  border-color: rgba(148, 163, 184, 0.5);
+}
+
+.k-grid .k-table th {
+  background-color: rgba(226, 232, 240, 0.6);
+  color: var(--foreground);
+  border-color: rgba(148, 163, 184, 0.4);
+}
+
+.k-grid .k-table td {
+  background-color: rgba(255, 255, 255, 0.9);
+  color: var(--foreground);
+  border-color: rgba(148, 163, 184, 0.3);
+}
+
+.k-grid .k-table tr:hover td {
+  background-color: rgba(37, 99, 235, 0.1);
+}
+
+.k-grid .k-toolbar,
+.k-grid .k-grouping-header,
+.k-scheduler .k-scheduler-toolbar,
+.k-scheduler .k-scheduler-navigation,
+.k-scheduler .k-scheduler-footer {
+  background-color: rgba(226, 232, 240, 0.6);
+  border-color: rgba(148, 163, 184, 0.4);
+  color: var(--foreground);
+}
+
+.k-chart,
+.k-chart .k-chart-surface,
+.k-chart .k-plot-area,
+.k-chart .k-bg {
+  background: rgba(255, 255, 255, 0.92) !important;
+}
+
+.k-chart text,
+.k-chart .k-axis-label,
+.k-chart .k-legend-item-text {
+  fill: var(--foreground) !important;
+  color: var(--foreground) !important;
+}
+
+.k-chart .k-grid-line,
+.k-chart .k-axis path,
+.k-chart .k-axis line {
+  stroke: rgba(148, 163, 184, 0.35) !important;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(148, 163, 184, 0.4);
+  border-radius: 999px;
+}
